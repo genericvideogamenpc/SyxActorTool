@@ -26,7 +26,8 @@ While in Alpha, the following need to be done. This will act as a checklist for 
 - Add to existing mods or create "projects" which can utilize existing files in a mod.
     - Compatibility with TKMM.
 
-# Dependencies
+# Building & Dependencies
+To build this tool, you need...
 WIP
 
 # Special Thanks
