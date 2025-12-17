@@ -1,0 +1,23 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SyxActorTool.SettingsView">
+  <StackPanel Spacing="12"
+              Width="300">
+
+    <TextBlock Text="Appearance"
+              FontSize="18"
+              FontWeight="SemiBold"/>
+
+    <TextBlock Text="Theme"/>
+
+    <ComboBox x:Name="ThemeComboBox"
+              SelectionChanged="ThemeSelectionChanged">
+      <ComboBoxItem Content="System"/>
+      <ComboBoxItem Content="Light"/>
+      <ComboBoxItem Content="Dark"/>
+    </ComboBox>
+  </StackPanel>
+</UserControl>

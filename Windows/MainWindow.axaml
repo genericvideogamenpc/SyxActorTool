@@ -1,0 +1,59 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SyxActorTool"
+        mc:Ignorable="d"
+        x:Class="SyxActorTool.MainWindow"
+        Width="800" Height="600"
+        MinWidth="480" MinHeight="420"
+        SystemDecorations="None"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="0"
+        CanResize="True">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- TITLE BAR -->
+        <Border Background="{DynamicResource SystemControlBackgroundBaseLowBrush}" Height="36">
+            <Grid ColumnDefinitions="*,Auto,Auto,Auto" VerticalAlignment="Center">
+
+                <!-- Window drag zone -->
+                <Border Grid.Column="0"
+
+                        Background="Transparent"/>
+
+                <!-- Minimize -->
+                <Button Grid.Column="1"
+                        CornerRadius="0"
+                        Width="40"
+                        Height="36"
+                        Content="_"/>
+
+                <!-- Maximize -->
+                <Button Grid.Column="2"
+                        CornerRadius="0"
+                        Width="40"
+                        Height="36"
+                        Content="_"/>
+
+                <!-- Close -->
+                <Button Grid.Column="3"
+                        CornerRadius="0"
+                        Width="40"
+                        Height="36"
+                        Background="#C0392B"
+                        Content="X"/>
+
+            </Grid>
+        </Border>
+
+        <!-- MAIN CONTENT AREA -->
+        <ContentControl Grid.Row="1"
+                        x:Name="MainContent"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch" />
+
+    </Grid>
+</Window>

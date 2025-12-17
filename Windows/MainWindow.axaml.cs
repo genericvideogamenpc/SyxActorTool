@@ -1,12 +1,14 @@
 using Avalonia.Controls;
 
-namespace SyxsActorTool
+namespace SyxActorTool
 {
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+
+            MainContent.Content = new SettingsView();
         }
     }
 }

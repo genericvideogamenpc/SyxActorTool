@@ -1,7 +1,7 @@
 ﻿using System;
 using Avalonia;
 
-namespace SyxsActorTool
+namespace SyxActorTool
 {
     internal class Program
     {
